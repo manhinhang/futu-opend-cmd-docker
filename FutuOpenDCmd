@@ -1,0 +1,5 @@
+#!/usr/bin/expect
+
+spawn docker attach $env(FUTU_OPEND_CONTAINER_NAME)
+send -- "$argv\r"
+expect eof
